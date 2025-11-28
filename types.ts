@@ -33,11 +33,21 @@ export enum InterviewTopic {
   KAFKA = 'Kafka 与消息队列',
   ELASTICSEARCH = 'Elasticsearch',
   DISTRIBUTED_SYSTEMS = '分布式系统设计',
-  ALGORITHMS = '算法与数据结构'
+  ALGORITHMS = '算法与数据结构',
+  DESIGN_PATTERNS = '设计模式与重构',
+  CODING_ABILITY = 'Code 编程能力实战'
 }
 
 export interface TopicConfig {
   id: InterviewTopic;
   label: string;
   icon: string;
+}
+
+export interface HistorySession {
+  id: string;
+  topic: InterviewTopic;
+  startTime: number;
+  messages: Message[];
+  preview: string; // A short preview of the question
 }

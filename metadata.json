@@ -1,5 +1,7 @@
 {
   "name": "BackendMaster Mock Interviewer",
   "description": "A high-level mock interview simulator for Senior Backend Engineers covering Java, Spring, Distributed Systems, and more. Features AI-powered scenario generation and detailed answer scoring.",
-  "requestFramePermissions": []
+  "requestFramePermissions": [
+    "microphone"
+  ]
 }
